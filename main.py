@@ -18,7 +18,7 @@ class HomeHandler(webapp2.RequestHandler): #homepage "/"
 class AboutHandler(webapp2.RequestHandler):
     def get(self):
         about_template = the_jinja_env.get_template('templates/about.html')
-        self.response.write(about_template.render())  
+        self.response.write(about_template.render())
 
 class ResultsHandler(webapp2.RequestHandler):
     def get(self):
@@ -27,7 +27,7 @@ class ResultsHandler(webapp2.RequestHandler):
           'name': self.request.get('user-first-name'), #stores form input named 'user-first-name' under key 'name' which is the same name as the placeholder on 'results.html'
           'feeling': self.request.get('user-feeling') #stores form input under 'user-feeling' under key 'feeling' which is the same name as the placeholder on 'results.html'
         }
-        results_template = the_jinja_env.get_template('templates/results.html')
+        results_template = the_jinja_env.get_template('templates/nintendo.html')
         self.response.write(results_template.render(results_Dict)) #passes in results_Dict that will fill the placeholders on results.html
 
 
@@ -35,7 +35,7 @@ class ResultsHandler(webapp2.RequestHandler):
 app = webapp2.WSGIApplication([
   ('/', HomeHandler),
   ('/about', AboutHandler),
-  ('/results', ResultsHandler),
+  ('/nintendo', ResultsHandler),
   ], debug=True)
 
 
