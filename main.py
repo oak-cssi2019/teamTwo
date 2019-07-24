@@ -138,6 +138,11 @@ class GearsFiveHandler(webapp2.RequestHandler):
         gears = the_jinja_env.get_template('templates/xbox_gears5.html')
         self.response.write(gears.render())
 
+class NintendoGamesHandler(webapp2.RequestHandler):
+    def get(self):
+        nintendogames = the_jinja_env.get_template('templates/nintendo.html')
+        self.response.write(nintendogames.render())
+
 class FlashHomeHandler(webapp2.RequestHandler):
     def get(self):
         home1_template = the_jinja_env.get_template('templates/Flash-games/flashHome.html')
@@ -210,6 +215,7 @@ app = webapp2.WSGIApplication([
   ('/star_wars_jedi', StarWarsJediHandler), #xbox one game
   ('/beyond_good_and_evil_2', BeyondGandEHandler), #xbox one game
   ('/gears5', GearsFiveHandler), #xbox one game
+  ('/nintendo_games', NintendoGamesHandler),
   ('/flashGamesHomepage', FlashHomeHandler),
   ('/happyWheels', HappyWheelsHandler),
   ('/raftWars', RaftWarsHandler),
