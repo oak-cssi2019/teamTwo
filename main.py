@@ -27,8 +27,9 @@ class ResultsHandler(webapp2.RequestHandler):
           'name': self.request.get('user-first-name'), #stores form input named 'user-first-name' under key 'name' which is the same name as the placeholder on 'results.html'
           'feeling': self.request.get('user-feeling') #stores form input under 'user-feeling' under key 'feeling' which is the same name as the placeholder on 'results.html'
         }
-        results_template = the_jinja_env.get_template('templates/results.html')
+        results_template = the_jinja_env.get_template('templates/nintendo.html')
         self.response.write(results_template.render(results_Dict)) #passes in results_Dict that will fill the placeholders on results.html
+
 
 class HomeOneHandler(webapp2.RequestHandler):
     def get(self):
@@ -148,6 +149,7 @@ class FlashHomeHandler(webapp2.RequestHandler):
         home1_template = the_jinja_env.get_template('templates/Flash-games/flashHome.html')
         self.response.write(home1_template.render())
 
+
 class HappyWheelsHandler(webapp2.RequestHandler):
     def get(self):
         happyWheels_template = the_jinja_env.get_template('templates/Flash-games/happyWheels.html')
@@ -157,6 +159,7 @@ class RaftWarsHandler(webapp2.RequestHandler):
     def get(self):
         raftWars_template = the_jinja_env.get_template('templates/Flash-games/raftWars.html')
         self.response.write(raftWars_template.render())
+        
 class RaftWars2Handler(webapp2.RequestHandler):
     def get(self):
         raftWars2_template = the_jinja_env.get_template('templates/Flash-games/raftWars2.html')
