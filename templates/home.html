@@ -3,17 +3,33 @@
   <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!-- imports bootstrap -->
     <link rel="stylesheet" type="text/css" href="../styles/styles.css"> <!-- imports styles.css stylesheet -->
+    <link rel="icon" href="http://images.medicaldaily.com/sites/medicaldaily.com/files/styles/headline/public/2015/11/19/video-games.jpg" type="image" sizes="16x16">
+
     <title>Videogames.com</title>
+    <style media="screen">
+    .dropdown:hover .dropdown-content {
+      display: block;
+      }
+    </style>
   </head>
   <body>
-    <div class="pos-f-t">
-      <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-          <a class="nav-link" href="/">Home</a>
-          <span class="text-muted">Toggleable via the navbar brand.</span>
-        </div>
-      </div>
       <nav class="navbar navbar-dark bg-dark">
+        <div class="pos-f-t">
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+              <a class="nav-link" href="/">Home</a>
+              <a class="nav-link" href="/">About</a>
+              <a class="nav-link" href="/">Contact</a>
+              <a class="nav-link" href="/">Games</a>
+                <div class="dropdown">
+                  <h1 class="nav-link" href="/">Games</h1>
+                  <div class="dropdown-content">
+                    <a class="nav-link" href="/flashGamesHomepage">Flash games</a>
+                  </div>
+                </div>
+              <span class="text-muted">Toggleable via the navbar brand.</span>
+            </div>
+          </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
