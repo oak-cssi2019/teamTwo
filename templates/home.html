@@ -20,20 +20,14 @@
       </nav>
     </div>
 
-    <div>
-      <h1>Hello Welcome To My World!</h1>
-      <h2>Visit the <a href="/about">About</a> page or fill out the form below:</h2> <!-- example of how to link to another page -- through it's route -->
-      <!-- form data gets processed by "/results." Note the "name" of each input and how it's referenced in the "/results" handler -->
-      <form method =”post” action="/results">
-        Your Name:<br>
-        <input type="text" name="user-first-name">
-        <br>
-        How are you feeling?<br>
-        <input type="text" name="user-feeling"><br>
-        <input type="submit" value="Go!">
-      </form>
-    </div>
-    <a href= nintendo.html >Nintendo</a>
+    <h1>Welcome to the Gamer's Club</h1>
+    <h2>Choose which section to look at.</h2>
+
+    <ul>
+      <a href="http://localhost:8080/consoles"><li>Consoles</li></a>
+      <a href="http://localhost:8080/video_games"><li>Video Games</li></a>
+      <a href="http://localhost:8080/flashGamesHomepage"><li>Flash Games</li></a>
+    </ul>
 
     <!-- imports all script files including project's script.js file, jQuery, and bootstrap script files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
