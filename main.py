@@ -19,7 +19,7 @@ class AboutHandler(webapp2.RequestHandler):
     def get(self):
         about_template = the_jinja_env.get_template('templates/about.html')
         self.response.write(about_template.render())
-
+#nintendo section
 class ResultsHandler(webapp2.RequestHandler):
     def get(self):
         # below are the form results from the form on home.html
@@ -27,7 +27,28 @@ class ResultsHandler(webapp2.RequestHandler):
           'name': self.request.get('user-first-name'), #stores form input named 'user-first-name' under key 'name' which is the same name as the placeholder on 'results.html'
           'feeling': self.request.get('user-feeling') #stores form input under 'user-feeling' under key 'feeling' which is the same name as the placeholder on 'results.html'
         }
-        results_template = the_jinja_env.get_template('templates/nintendo.html')
+        results_template = the_jinja_env.get_template('templates/nintendo/nintendo.html')
+        self.response.write(results_template.render(results_Dict)) #passes in results_Dict that will fill the placeholders on results.html
+
+class ThreeDSHandler(webapp2.RequestHandler):
+    def get(self):
+        # below are the form results from the form on home.html
+        results_Dict = {
+          'name': self.request.get('user-first-name'), #stores form input named 'user-first-name' under key 'name' which is the same name as the placeholder on 'results.html'
+          'feeling': self.request.get('user-feeling') #stores form input under 'user-feeling' under key 'feeling' which is the same name as the placeholder on 'results.html'
+        }
+        results_template = the_jinja_env.get_template('templates/nintendo/3dsGames.html')
+        self.response.write(results_template.render(results_Dict)) #passes in results_Dict that will fill the placeholders on results.html
+
+
+class ConsoleHandler(webapp2.RequestHandler):
+    def get(self):
+        # below are the form results from the form on home.html
+        results_Dict = {
+          'name': self.request.get('user-first-name'), #stores form input named 'user-first-name' under key 'name' which is the same name as the placeholder on 'results.html'
+          'feeling': self.request.get('user-feeling') #stores form input under 'user-feeling' under key 'feeling' which is the same name as the placeholder on 'results.html'
+        }
+        results_template = the_jinja_env.get_template('templates/nintendo/consoles.html')
         self.response.write(results_template.render(results_Dict)) #passes in results_Dict that will fill the placeholders on results.html
 
 
@@ -198,6 +219,12 @@ class worldsHardestGame3Handler(webapp2.RequestHandler):
 app = webapp2.WSGIApplication([
   ('/', HomeHandler),
   ('/about', AboutHandler),
+<<<<<<< HEAD
+  ('/nintendo', ResultsHandler),
+  ('/3ds', ThreeDSHandler),
+  ('/consoles', ConsoleHandler),
+  ('/flashGamesHomepage', Home1Handler),
+=======
   ('/results', ResultsHandler),
   ('/home', HomeOneHandler),
   ('/consoles', ConsoleHandler),
@@ -219,6 +246,7 @@ app = webapp2.WSGIApplication([
   ('/beyond_good_and_evil_2', BeyondGandEHandler), #xbox one game
   ('/gears5', GearsFiveHandler), #xbox one game
   ('/flashGamesHomepage', FlashHomeHandler),
+>>>>>>> 09ce7bcdc5b53b1addc0bab3a43c7f5021b50362
   ('/happyWheels', HappyWheelsHandler),
   ('/raftWars', RaftWarsHandler),
   ('/raftWars2', RaftWars2Handler),
