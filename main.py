@@ -30,11 +30,6 @@ class ResultsHandler(webapp2.RequestHandler):
         results_template = the_jinja_env.get_template('templates/results.html')
         self.response.write(results_template.render(results_Dict)) #passes in results_Dict that will fill the placeholders on results.html
 
-class HomeOneHandler(webapp2.RequestHandler):
-    def get(self):
-        home = the_jinja_env.get_template('templates/home1.html')
-        self.response.write(home.render())
-
 #page shows the console options to look at
 class ConsoleHandler(webapp2.RequestHandler):
     def get(self):
@@ -157,6 +152,7 @@ class RaftWarsHandler(webapp2.RequestHandler):
     def get(self):
         raftWars_template = the_jinja_env.get_template('templates/Flash-games/raftWars.html')
         self.response.write(raftWars_template.render())
+
 class RaftWars2Handler(webapp2.RequestHandler):
     def get(self):
         raftWars2_template = the_jinja_env.get_template('templates/Flash-games/raftWars2.html')
@@ -196,7 +192,6 @@ app = webapp2.WSGIApplication([
   ('/', HomeHandler),
   ('/about', AboutHandler),
   ('/results', ResultsHandler),
-  ('/home', HomeOneHandler),
   ('/consoles', ConsoleHandler),
   ('/PS4', PlaystationFourHandler), #page full of the playstation 4 console
   ('/xbox_one', XboxOneHandler), #page full of the xbox one console
