@@ -9,8 +9,10 @@
     <div class="pos-f-t">
       <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
-          <a class="nav-link" href="/">Home</a>
-          <span class="text-muted">Toggleable via the navbar brand.</span>
+          <ul>
+            <a class="nav-link" href="/">Home</a>
+            <span class="text-muted">Toggleable via the navbar brand.</span>
+          </ul>
         </div>
       </div>
       <nav class="navbar navbar-dark bg-dark">
@@ -21,8 +23,8 @@
     </div>
 
     <div>
-      <h1>About Us</h1>
-      <h2>We're pretty cool.</h2>
+      <!-- has placeholders for data from "ResultsHanler" on main.py -->
+      <h1>Hello {{name}}, interesting that you're feeling {{feeling}} today.</h1>
     </div>
 
     <!-- imports all script files including project's script.js file, jQuery, and bootstrap script files -->

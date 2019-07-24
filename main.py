@@ -33,49 +33,49 @@ class ResultsHandler(webapp2.RequestHandler):
 # Flash games section
 class Home1Handler(webapp2.RequestHandler):
     def get(self):
-        home1_template = the_jinja_env.get_template('Flash-games/flashHome.html')
+        home1_template = the_jinja_env.get_template('templates/Flash-games/flashHome.html')
         self.response.write(home1_template.render())
 class HappyWheelsHandler(webapp2.RequestHandler):
     def get(self):
-        happyWheels_template = the_jinja_env.get_template('Flash-games/happyWheels.html')
+        happyWheels_template = the_jinja_env.get_template('templates/Flash-games/happyWheels.html')
         self.response.write(happyWheels_template.render())
 class RaftWarsHandler(webapp2.RequestHandler):
     def get(self):
-        raftWars_template = the_jinja_env.get_template('Flash-games/raftWars.html')
+        raftWars_template = the_jinja_env.get_template('templates/Flash-games/raftWars.html')
         self.response.write(raftWars_template.render())
 class RaftWars2Handler(webapp2.RequestHandler):
     def get(self):
-        raftWars2_template = the_jinja_env.get_template('Flash-games/raftWars2.html')
+        raftWars2_template = the_jinja_env.get_template('templates/Flash-games/raftWars2.html')
         self.response.write(raftWars2_template.render())
 
 class Run1Handler(webapp2.RequestHandler):
     def get(self):
-        run1_template = the_jinja_env.get_template('Flash-games/run1.html')
+        run1_template = the_jinja_env.get_template('templates/Flash-games/run1.html')
         self.response.write(run1_template.render())
 
 class Run2Handler(webapp2.RequestHandler):
     def get(self):
-        run2_template = the_jinja_env.get_template('Flash-games/run2.html')
+        run2_template = the_jinja_env.get_template('templates/Flash-games/run2.html')
         self.response.write(run2_template.render())
 
 class Run3Handler(webapp2.RequestHandler):
     def get(self):
-        run3_template = the_jinja_env.get_template('Flash-games/run3.html')
+        run3_template = the_jinja_env.get_template('templates/Flash-games/run3.html')
         self.response.write(run3_template.render())
 
 class worldsHardestGameHandler(webapp2.RequestHandler):
     def get(self):
-        whg_template = the_jinja_env.get_template('Flash-games/worldsHardestGame.html')
+        whg_template = the_jinja_env.get_template('templates/Flash-games/worldsHardestGame.html')
         self.response.write(whg_template.render())
 
 class worldsHardestGame2Handler(webapp2.RequestHandler):
     def get(self):
-        whg2_template = the_jinja_env.get_template('Flash-games/worldsHardestGame2.html')
+        whg2_template = the_jinja_env.get_template('templates/Flash-games/worldsHardestGame2.html')
         self.response.write(whg2_template.render())
 
 class worldsHardestGame3Handler(webapp2.RequestHandler):
     def get(self):
-        whg3_template = the_jinja_env.get_template('Flash-games/worldsHardestGame3.html')
+        whg3_template = the_jinja_env.get_template('templates/Flash-games/worldsHardestGame3.html')
 
 # Flash games ends here
 
