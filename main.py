@@ -180,7 +180,7 @@ class RaftWarsHandler(webapp2.RequestHandler):
     def get(self):
         raftWars_template = the_jinja_env.get_template('templates/Flash-games/raftWars.html')
         self.response.write(raftWars_template.render())
-        
+
 class RaftWars2Handler(webapp2.RequestHandler):
     def get(self):
         raftWars2_template = the_jinja_env.get_template('templates/Flash-games/raftWars2.html')
@@ -219,12 +219,11 @@ class worldsHardestGame3Handler(webapp2.RequestHandler):
 app = webapp2.WSGIApplication([
   ('/', HomeHandler),
   ('/about', AboutHandler),
-<<<<<<< HEAD
   ('/nintendo', ResultsHandler),
   ('/3ds', ThreeDSHandler),
   ('/consoles', ConsoleHandler),
-  ('/flashGamesHomepage', Home1Handler),
-=======
+  ('/flashGamesHomepage', FlashHomeHandler),
+
   ('/results', ResultsHandler),
   ('/home', HomeOneHandler),
   ('/consoles', ConsoleHandler),
@@ -246,7 +245,6 @@ app = webapp2.WSGIApplication([
   ('/beyond_good_and_evil_2', BeyondGandEHandler), #xbox one game
   ('/gears5', GearsFiveHandler), #xbox one game
   ('/flashGamesHomepage', FlashHomeHandler),
->>>>>>> 09ce7bcdc5b53b1addc0bab3a43c7f5021b50362
   ('/happyWheels', HappyWheelsHandler),
   ('/raftWars', RaftWarsHandler),
   ('/raftWars2', RaftWars2Handler),
