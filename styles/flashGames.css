@@ -4,6 +4,10 @@ ul {
   padding: 0;
 }
 
+p{
+  margin: auto;
+}
+
 .btn{
   text-align: center;
 }
