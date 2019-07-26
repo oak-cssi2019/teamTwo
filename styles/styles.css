@@ -3,7 +3,11 @@ h1 {
 }
 
 .color {
-  color:rgb(255,0,0);
+  /* margin-bottom: -10px; */
+  color:rgb(255,255,255);
+  font-weight: bold;
+  padding:5px 0px 5px 0px;
+  background-color: rgb(0,0,0);
 }
 
 .titleColor {
@@ -26,38 +30,12 @@ h1 {
   background-color:rgb(0, 55, 185);
 }
 
-.ps4title{
+.title{
   text-align: center;
   color:rgb(0,0,0)
 }
 
-.ps4Text {
-  text-align: center;
-  margin:0px 10px 10px 0px;
-  /* overflow-y:auto; */
-  height:65vh;
-  width:48vw;
-  float:left;
-  padding:10px 10px 10px 10px;
-  border:10px ridge rgb(0, 0, 0);
-  background-color:rgb(255, 255, 255);
-  color:rgb(0,0,0);
-}
-
-.ps4Text1 {
-  text-align: center;
-  margin:0px 10px 10px 0px;
-  overflow-y:auto;
-  height:65vh;
-  width:48vw;
-  float:right;
-  padding:10px 10px 10px 10px;
-  border:10px ridge rgb(0, 0, 0);
-  background-color:rgb(255, 255, 255);
-  color:rgb(0,0,0);
-}
-
-.ps4Text2 {
+.ps4TextLeft {
   text-align: center;
   margin:0px 10px 10px 0px;
   overflow-y:auto;
@@ -70,7 +48,7 @@ h1 {
   color:rgb(0,0,0);
 }
 
-.ps4Text3 {
+.ps4TextRight {
   text-align: center;
   margin:0px 10px 10px 0px;
   overflow-y:auto;
@@ -83,7 +61,7 @@ h1 {
   color:rgb(0,0,0);
 }
 
-.ps4Text4 {
+.ps4TextCenter {
   display:inline-block;
   margin:0px 10px 10px 0px;
   overflow-y:auto;
@@ -103,12 +81,7 @@ h1 {
   background-color:rgb(93, 194, 30);
 }
 
-.Xboxtitle {
-  text-align: center;
-  color:rgb(0,0,0)
-}
-
-.xboxText {
+.xboxTextLeft {
   margin:0px 10px 10px 0px;
   overflow-y:auto;
   height:65vh;
@@ -120,7 +93,7 @@ h1 {
   color:rgb(255, 255, 255);
 }
 
-.xboxText1 {
+.xboxTextRight {
   margin:0px 10px 10px 0px;
   overflow-y:auto;
   height:65vh;
@@ -132,31 +105,7 @@ h1 {
   color:rgb(255, 255, 255);
 }
 
-.xboxText2 {
-  margin:0px 10px 10px 0px;
-  overflow-y:auto;
-  height:65vh;
-  width:48vw;
-  float:left;
-  padding:10px 10px 10px 10px;
-  border:10px ridge rgb(107, 107, 107);
-  background-color:rgb(16, 124, 16);
-  color:rgb(255, 255, 255);
-}
-
-.xboxText3 {
-  margin:0px 10px 10px 0px;
-  overflow-y:auto;
-  height:65vh;
-  width:48vw;
-  float:right;
-  padding:10px 10px 10px 10px;
-  border:10px ridge rgb(107, 107, 107);
-  background-color:rgb(16, 124, 16);
-  color:rgb(255, 255, 255);
-}
-
-.xboxText4 {
+.xboxTextCenter {
   display:inline-block;
   margin:0px 10px 10px 0px;
   overflow-y:auto;
@@ -172,40 +121,611 @@ h1 {
   text-align: center;
 }
 
-#image {
-  margin-left: 20px;
-  margin-bottom: 50px;
+#imageLeft {
+  margin:0px 10px 200px 0px;
   float:left;
+  border:10px hidden rgb(255,255,255);
+  height:80vh;
+  width:40vw;
 }
 
-#image1 {
-  margin-left: 10px;
-  margin-bottom: 50px;
+#imageRight {
+  margin:0px 10px 200px 0px;
   float:right;
+  border:10px hidden rgb(255,255,255);
+  height:80vh;
+  width:40vw;
 }
 
-#image2 {
-  margin-left: 10px;
-  margin-bottom: 50px;
+.watchdogsLeft {
+  background-image:url("https://assets1.ignimgs.com/2019/06/05/watch-dogs1-1559693630521.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin:0px 10px 10px 0px;
+  overflow-y:auto;
+  height:40vh;
+  width:48vw;
   float:left;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(0, 0, 0);
+  background-color:rgb(255, 255, 255);
+  color:rgb(0,0,0);
 }
 
-#image3 {
-  margin-left: 10px;
-  margin-bottom: 50px;
+.watchdogsRight {
+  background-image:url("https://assets1.ignimgs.com/2019/06/05/watch-dogs1-1559693630521.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin:0px 10px 10px 0px;
+  overflow-y:auto;
+  height:40vh;
+  width:48vw;
   float:right;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(0, 0, 0);
+  background-color:rgb(255, 255, 255);
+  color:rgb(0,0,0);
 }
 
-#image4 {
-  margin-left: 10px;
-  margin-bottom: 50px;
+.watchdogsLeft1 {
+  background-image:url("https://assets1.ignimgs.com/2019/06/05/watch-dogs1-1559693630521.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin:0px 10px 10px 0px;
+  height:25vh;
+  width:48vw;
   float:left;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(0, 0, 0);
+  background-color:rgb(255, 255, 255);
+  color:rgb(0,0,0);
 }
 
-#image5 {
-  margin-left: 20px;
-  margin-bottom: 50px;
+.watchdogsRight1 {
+  background-image:url("https://assets1.ignimgs.com/2019/06/05/watch-dogs1-1559693630521.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin:0px 10px 10px 0px;
+  height:25vh;
+  width:48vw;
   float:right;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(0, 0, 0);
+  background-color:rgb(255, 255, 255);
+  color:rgb(0,0,0);
+}
+
+#WDtext {
+  text-align: center;
+  color:rgb(255,255,255);
+}
+
+.redTitle {
+  color:rgb(255,0,0);
+}
+
+#WDtitle {
+  text-align: center;
+  color:rgb(255,0,0);
+}
+
+#mainBox {
+  margin:25px 500px 20px 500px;
+}
+
+#toTop {
+  vertical-align: top;
+  padding:20px;
+}
+
+#avengersTitle {
+  color:rgb(192,192,192);
+  text-align: center;
+
+}
+
+#Aimage {
+  text-align: center;
+  width:100%;
+  height:40%;
+}
+
+.avengersLeft {
+  background-image:url("https://i.pinimg.com/originals/07/34/fe/0734fe58a38db32a87329a75846b2f6d.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin:0px 10px 10px 0px;
+  overflow-y:auto;
+  height:40vh;
+  width:48vw;
+  float:left;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(0, 0, 0);
+  background-color:rgb(255, 255, 255);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  color:rgb(0,255,0);
+}
+
+.avengersRight {
+  background-image:url("https://media.karousell.com/media/photos/products/2019/01/17/thor_mjolnir_hammercar_decal__sticker_vinyl_free_mailing_1547703331_95f59035.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin:0px 10px 10px 0px;
+  overflow-y:auto;
+  height:40vh;
+  width:48vw;
+  float:right;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(0, 0, 0);
+  background-color:rgb(255, 255, 255);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  color:rgb(255,0,0);
+}
+
+.avengersLeft1 {
+  background-image:url("https://i.pinimg.com/originals/ce/c7/36/cec7362d6a6968e53d77727c25ed0f35.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin:0px 10px 10px 0px;
+  overflow-y:auto;
+  height:40vh;
+  width:48vw;
+  float:left;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(0, 0, 0);
+  background-color:rgb(255, 255, 255);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  color:rgb(185, 126, 16);
+}
+
+.avengersRight1 {
+  background-image:url("https://i.pinimg.com/originals/20/6d/eb/206deb1d543ae3c169ecc5ae8cd90919.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin:0px 10px 10px 0px;
+  overflow-y:auto;
+  height:40vh;
+  width:48vw;
+  float:right;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(0, 0, 0);
+  background-color:rgb(255, 255, 255);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  color:rgb(0,191,255);
+}
+
+#cyberTitle {
+  color:rgb(255, 255, 0);
+  text-align: center;
+}
+
+.cyberpunkLeft {
+  margin:0px 10px 10px 0px;
+  overflow-y:auto;
+  height:65vh;
+  width:48vw;
+  float:left;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(107, 107, 107);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  background-color:rgb(0,255,159);
+  color:rgb(255, 255, 0);
+}
+
+.cyberpunkRight {
+  text-align: center;
+  margin:0px 10px 10px 0px;
+  overflow-y:auto;
+  height:65vh;
+  width:48vw;
+  float:right;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(0, 0, 0);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  background-color:rgb(0,184,255);
+  color:rgb(255,255,0);
+}
+
+.cyberpunkLeft1 {
+  text-align: center;
+  margin:0px 30px 10px 0px;
+  overflow-y:auto;
+  height:65vh;
+  width:48vw;
+  float:Left;
+  padding:10px 10px 10px 10px;
+  border:10px dotted rgb(0,255,159);
+  color:rgb(0,184,255);
+}
+
+.cyberpunkRight1 {
+  text-align: center;
+  margin:10px 10px 10px 0px;
+  overflow-y:auto;
+  height:65vh;
+  width:48vw;
+  float:right;
+  padding:10px 10px 10px 10px;
+  border:10px dotted rgb(0,30,255);
+  color:rgb(189,0,255);
+}
+
+.cyberText {
+  margin-top: 10px;
+  color:rgb(220,20,60);
+  text-align: center;
+}
+
+.lastofusLeft {
+  margin:20px 10px 20px 0px;
+  overflow-y:auto;
+  height:65vh;
+  width:48vw;
+  float:left;
+  padding:10px 10px 10px 10px;
+  border:10px dotted rgb(255,255,255);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  background-color:rgb(139,69,19);
+  color:rgb(255, 255, 0);
+}
+
+.lastofusRight {
+  text-align: center;
+  margin:20px 10px 20px 0px;
+  overflow-y:auto;
+  height:65vh;
+  width:48vw;
+  float:right;
+  padding:10px 10px 10px 10px;
+  border:10px dotted rgb(255,255,255);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  background-color:rgb(139,69,19);
+  color:rgb(255,255,0);
+}
+
+#LastBackground {
+  background-color:rgb(25,25,112);
+}
+
+#LOUimage {
+text-align: center;
+width:100%;
+height:40%;
+}
+
+#titleLast {
+  color:rgb(255,255,255);
+  text-align: center;
+}
+
+.LastTextCenter {
+  display:inline-block;
+  margin:25px 30px 20px 30px;
+  overflow-y:auto;
+  height:65vh;
+  width:48vw;
+  padding:10px 10px 10px 10px;
+  border:10px dotted rgb(255,255,255);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  background-color:rgb(139,69,19);
+  color:rgb(255,255,0);
+}
+
+#evilCenter {
+  text-align:center;
+  color:rgb(184,134,11);
+}
+
+.evilLeft {
+  margin:20px 10px 20px 0px;
+  overflow-y:auto;
+  height:65vh;
+  width:48vw;
+  float:left;
+  padding:10px 10px 10px 10px;
+  border:10px groove rgb(30,144,255);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  background-color:rgb(105,105,105);
+  color:rgb(184,134,11);
+}
+
+.evilRight{
+  margin:20px 10px 20px 0px;
+  overflow-y:auto;
+  height:65vh;
+  width:48vw;
+  float:right;
+  padding:10px 10px 10px 10px;
+  border:10px groove rgb(30,144,255);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  background-color:rgb(105,105,105);
+  color:rgb(184,134,11);
+}
+
+.predator {
+  margin:20px 200px 800px 200px;
+  text-align: center;
+  color:rgb(192,192,192);
+}
+
+#spongebobBackground{
+  background-color:rgb(58,201,183);
+}
+
+.spongebobTitle {
+  color:rgb(240,242,14);
+  text-align: center;
+}
+
+.spongebobLeft {
+  margin:0px 50px 10px 0px;
+  overflow-y:auto;
+  height:60vh;
+  width:48vw;
+  float:left;
+  padding:10px 10px 10px 10px;
+  border:10px dashed rgb(112,68,39);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  background-color:rgb(255,255,255);
+  color:rgb(198,47,36);
+}
+
+.spongebobLeft1 {
+  margin:0px 50px 10px 0px;
+  overflow-y:auto;
+  height:35vh;
+  width:45vw;
+  float:left;
+  padding:10px 10px 10px 10px;
+  border:10px dashed rgb(112,68,39);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  background-color:rgb(255,255,255);
+  color:rgb(198,47,36);
+}
+
+.spongebobRight {
+  margin:15px 50px 10px 0px;
+  overflow-y:auto;
+  height:35vh;
+  width:45vw;
+  float:right;
+  padding:10px 10px 10px 10px;
+  border:10px dashed rgb(112,68,39);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  background-color:rgb(255,255,255);
+  color:rgb(198,47,36);
+}
+
+#doomBackground {
+  background-color:rgb(128,0,0);
+}
+
+#doomTitle{
+  color:rgb(255,255,255);
+  text-align:center;
+}
+
+.doomLeft {
+  margin:0px 50px 20px 0px;
+  overflow-y:auto;
+  height:60vh;
+  width:48vw;
+  float:left;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(32,64,32);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  background-color:rgb(96,0,0);
+  color:rgb(255,255,255);
+}
+
+.doomRight {
+  margin:20px 10px 10px 0px;
+  overflow-y:auto;
+  height:60vh;
+  width:48vw;
+  float:right;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(32,64,32);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  background-color:rgb(96,0,0);
+  color:rgb(255,255,255);
+}
+
+#borderlandsTitle {
+  color:rgb(255,204,0);
+  text-align: center;
+}
+
+#borderlandsBackground {
+  background-color:rgb(135,206,250);
+}
+
+.borderlandsLeft {
+  margin:15px 50px 20px 0px;
+  overflow-y:auto;
+  height:60vh;
+  width:45vw;
+  float:left;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(255,204,0);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  background-color:rgb(58, 95, 11); /*255,0,0*/
+  color:rgb(255,0,0); /*58, 95, 11*/
+}
+
+.borderlandsRight {
+  margin:15px 10px 20px 0px;
+  overflow-y:auto;
+  height:60vh;
+  width:45vw;
+  float:right;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(255,204,0);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  background-color:rgb(58, 95, 11);
+  color:rgb(255,0,0);
+}
+
+.starTitle {
+  color:rgb(255,255,255);
+  text-align:center;
+}
+
+#star {
+  text-align: center;
+  color:rgb(255,255,255);
+}
+
+.starLeft {
+  background-image:url("https://starwarsblog.starwars.com/wp-content/uploads/sites/6/2015/11/rebel-symbol.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin:20px 10px 20px 0px;
+  overflow-y:auto;
+  height:80vh;
+  width:48vw;
+  float:left;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(0, 0, 0);
+  background-color:rgb(255, 255, 255);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  color:rgb(0,191,255);
+}
+
+.starRight {
+  background-image:url("https://starwarsblog.starwars.com/wp-content/uploads/2016/02/imperialseal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin:20px 10px 20px 0px;
+  overflow-y:auto;
+  height:80vh;
+  width:48vw;
+  float:left;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(0, 0, 0);
+  background-color:rgb(255, 255, 255);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  color:rgb(255,0,0);
+}
+
+.beyondTitle {
+  color:rgb(255,0,0);
+  text-align: center;
+}
+
+.beyondBackground {
+  background-color:rgb(139,69,19);
+}
+
+.beyondLeft {
+  margin:20px 10px 20px 0px;
+  overflow-y:auto;
+  height:76vh;
+  width:48vw;
+  float:left;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(0, 0, 0);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  color:rgb(0,191,255);
+}
+
+.beyondLeft1 {
+  margin:20px 0px 20px 0px;
+  overflow-y:auto;
+  height:80vh;
+  width:48vw;
+  float:left;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(0, 0, 0);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  color:rgb(0,191,255);
+}
+
+.beyondRight {
+  margin:20px 10px 20px 0px;
+  overflow-y:auto;
+  height:80vh;
+  width:48vw;
+  float:right;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(0, 0, 0);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  color:rgb(0,191,255);
+}
+
+#gearTitle {
+  color:rgb(255,0,0);
+  text-align: center;
+  margin:0px 180px 0px 180px;
+}
+
+.gearsLeft{
+  background-image:url("http://www.clker.com/cliparts/5/7/d/a/13182196511522179118skull_logo_gears_of_war.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin:20px 10px 20px 0px;
+  overflow-y:auto;
+  height:80vh;
+  width:48vw;
+  float:left;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(0, 0, 0);
+  background-color:rgb(255, 255, 255);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  color:rgb(0,191,255);
+}
+
+.gearsRight {
+  background-image:url("http://www.clker.com/cliparts/5/7/d/a/13182196511522179118skull_logo_gears_of_war.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin:20px 10px 20px 0px;
+  overflow-y:auto;
+  height:80vh;
+  width:48vw;
+  float:right;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(0, 0, 0);
+  background-color:rgb(255, 255, 255);
+  font-weight:bold;
+  text-shadow: 1px 1px 0px #000000;
+  color:rgb(0,191,255);
 }
 
   /* #tw3nty{

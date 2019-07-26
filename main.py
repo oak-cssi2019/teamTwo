@@ -2,7 +2,7 @@
 import webapp2
 import jinja2
 import os
-from review_model import Reviews
+# from review_model import Reviews
 # this initializes the jinja2 environment
 the_jinja_env = jinja2.Environment(
   loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
@@ -254,7 +254,6 @@ app = webapp2.WSGIApplication([
   ('/switch', SwitchHandler),
   ('/reviews', ReviewHandler),
   ('/flashGamesHomepage', FlashHomeHandler),
-  ('/results', ResultsHandler),
   ('/consoles', ConsoleHandler),
 
   # ('/nintendo', ResultsHandler),
