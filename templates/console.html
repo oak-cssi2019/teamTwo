@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Videogames.com</title>
+
   <link rel="icon" href="http://images.medicaldaily.com/sites/medicaldaily.com/files/styles/headline/public/2015/11/19/video-games.jpg" type="image" sizes="16x16">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!-- imports bootstrap -->
   <link rel="stylesheet" type="text/css" href="../styles/style.css"> <!-- imports styles.css stylesheet -->
+  <title>Consoles</title>
 </head>
 <body>
   <div class="pos-f-t">
@@ -27,16 +28,45 @@
       </ul>
     </nav>
   </div>
-  <h1>Welcome to the consoles page:</h1>
-  <h2> Pick a console to read the the info. </h2>
-  <a href="http://localhost:8080/PS4"><img src="https://asia.playstation.com/content/dam/pscom/japan-asia/playstation4/top/ps4-top-hero-sp-R-20170302.png"></a>
+
+  <h1 class="titleColor">Pick a console to read the the info:</h1>
+  <h2 class="titleColor"> Pick a console to read the the info. </h2>
+  
   <!-- Playstation image -->
 
-  <a href="http://localhost:8080/xbox_one"><img src="https://cdn.mos.cms.futurecdn.net/VDpd6g8cLoFCiHc6gfowTh-768-80.jpg"></a>
+  <!-- <a href="http://localhost:8080/xbox_one"><img src="https://images7.alphacoders.com/871/thumb-1920-871791.png"></a> -->
   <!-- Xbox one image -->
 
-  <!-- <a href=""><img src="https://cdn.images.express.co.uk/img/dynamic/143/590x/Nintendo-Switch-1154486.jpg?r=1563371251121"></a> -->
-  <!-- Nintendo Switch Image -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+  </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="http://localhost:8080/PS4"><img id="imageHeight" class="d-block w-100" src="http://getwallpapers.com/wallpaper/full/1/6/b/577008.jpg"></a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Playstation 4 Games</h5>
+      </div>
+    </div>
+      <div class="carousel-item">
+        <a href="http://localhost:8080/xbox_one"><img id="imageHeight" class="d-block w-100" src="https://i.ibb.co/F76YqQ2/xbox.jpg"></a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Xbox One Games</h5>
+    </div>
+  </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+<!-- <a href="https://ibb.co/6sYtJKz"><img src="https://i.ibb.co/F76YqQ2/xbox.jpg" alt="xbox" border="0"></a><br /><a target='_blank' href='https://freeonlinedice.com/'>random dice generator</a><br /> -->
 
   <!-- imports all script files including project's script.js file, jQuery, and bootstrap script files -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
