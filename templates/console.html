@@ -1,19 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!-- imports bootstrap -->
+  <link rel="stylesheet" type="text/css" href="../styles/styles.css"> <!-- imports styles.css stylesheet -->
   <title>Consoles</title>
 </head>
-<body>
-  <h1>Welcome to the consoles page:</h1>
-  <h2> Pick a console to read the the info. </h2>
-  <a href="http://localhost:8080/PS4"><img src="https://asia.playstation.com/content/dam/pscom/japan-asia/playstation4/top/ps4-top-hero-sp-R-20170302.png"></a>
+<body id="homeBackground">
+  <h1 class="titleColor">Pick a console to read the the info:</h1>
+  <h2 class="titleColor"> Pick a console to read the the info. </h2>
+  <!-- <a href="http://localhost:8080/PS4"><img src="http://getwallpapers.com/wallpaper/full/1/6/b/577008.jpg"></a> -->
   <!-- Playstation image -->
 
-  <a href="http://localhost:8080/xbox_one"><img src="https://cdn.mos.cms.futurecdn.net/VDpd6g8cLoFCiHc6gfowTh-768-80.jpg"></a>
+  <!-- <a href="http://localhost:8080/xbox_one"><img src="https://images7.alphacoders.com/871/thumb-1920-871791.png"></a> -->
   <!-- Xbox one image -->
 
-  <!-- <a href=""><img src="https://cdn.images.express.co.uk/img/dynamic/143/590x/Nintendo-Switch-1154486.jpg?r=1563371251121"></a> -->
-  <!-- Nintendo Switch Image -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+  </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="http://localhost:8080/PS4"><img id="imageHeight" class="d-block w-100" src="http://getwallpapers.com/wallpaper/full/1/6/b/577008.jpg"></a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Playstation 4 Games</h5>
+      </div>
+    </div>
+      <div class="carousel-item">
+        <a href="http://localhost:8080/xbox_one"><img id="imageHeight" class="d-block w-100" src="https://i.ibb.co/F76YqQ2/xbox.jpg"></a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Xbox One Games</h5>
+    </div>
+  </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 
+<!-- <a href="https://ibb.co/6sYtJKz"><img src="https://i.ibb.co/F76YqQ2/xbox.jpg" alt="xbox" border="0"></a><br /><a target='_blank' href='https://freeonlinedice.com/'>random dice generator</a><br /> -->
+
+  <!-- <a href="http://localhost:8080/"><img src="https://cdn.images.express.co.uk/img/dynamic/143/590x/Nintendo-Switch-1154486.jpg?r=1563371251121"></a>  -->
+  <!-- Nintendo Switch Image -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="../scripts/script.js"></script>
 </body>
 </html>

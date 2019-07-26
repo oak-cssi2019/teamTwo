@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!-- imports bootstrap -->
+  <link rel="stylesheet" type="text/css" href="../styles/styles.css"> <!-- imports styles.css stylesheet -->
   <title>Playstation Games</title>
 </head>
-<body>
-  <h1>Welcome to the Playstation games</h1>
-  <h2>Pick a game to read the latest info on it.</h2>
-  <a href="http://localhost:8080/watch_dogs_legion"><img src="https://www.gamestop.com/common/images/lbox/198041brp.jpg"></a>
-  <a href="http://localhost:8080/marvel_avengers"><img src="https://www.gamestop.com/common/images/lbox/202265brp.jpg"></a>
-  <a href="http://localhost:8080/cyberpunk2077"><img src="https://www.gamestop.com/common/images/lbox/202330brp.jpg"></a>
-  <a href="http://localhost:8080/the_last_of_us_2"><img src="https://wholesgame.com/wp-content/uploads/The-Last-of-Us-Part-2-Reveal-PS4.jpg"></a>
-  <a href="http://localhost:8080/medievil"><img src="https://www.gamestop.com/common/images/lbox/197878brp.jpg"></a>
-  <a href="http://localhost:8080/predator"><img src="http://images.pushsquare.com/games/ps4/predator_hunting_grounds/cover_large.jpg"></a>
+<body id="ps4Background">
+  <h1 class="ps4title">Pick a PS4 game to read on their latest news</h1>
+
+  <div id="image">
+  <a href="http://localhost:8080/watch_dogs_legion"><img src="https://images-na.ssl-images-amazon.com/images/I/8137VnBVlqL._AC_SL1500_.jpg" width=600></a>
+  </div>
+
+  <div id="image1">
+  <a href="http://localhost:8080/marvel_avengers"><img src="https://live.staticflickr.com/65535/48040927306_581b7bd533_b.jpg" width=600></a>
+  </div>
+
+  <div id="image2">
+  <a href="http://localhost:8080/cyberpunk2077"><img src="https://cms.gameflycdn.com/proxy/gf/boxart/480w/5018093.jpg" width=600></a>
+  </div>
+
+  <div id="image3">
+  <a href="http://localhost:8080/the_last_of_us_2"><img src="https://wholesgame.com/wp-content/uploads/The-Last-of-Us-Part-2-Reveal-PS4.jpg" width=600></a>
+  </div>
+
+  <div id="image4">
+  <a href="http://localhost:8080/medievil"><img src="https://static-ca.ebgames.ca/images/products/739706/3max.jpg" width=600></a>
+  </div>
+
+  <div id="image5">
+  <a href="http://localhost:8080/predator"><img src="http://images.pushsquare.com/games/ps4/predator_hunting_grounds/cover_large.jpg" width=600></a>
+  </div>
 
     <!-- ('/watch_dogs_legion', WatchDogsLegionHandler), #ps4 game
      ('/marvel_avengers', MarvelAvengersHandler), #ps4 game
@@ -19,5 +38,10 @@
      ('/the_last_of_us_2', LastofUsPartTwoHandler), #ps4 game
      ('/medievil', MediEvilHandler), #ps4 game
      ('/predator', PredatorHandler), #ps4 game -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     <script src="../scripts/script.js"></script>
 </body>
 </html>
