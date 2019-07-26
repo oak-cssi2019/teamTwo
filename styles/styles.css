@@ -2,7 +2,213 @@ h1 {
   color: blue;
 }
 
-#tw3nty{
-  width: 200px;
-  height: 300px;
+.color {
+  color:rgb(255,0,0);
 }
+
+.titleColor {
+  color:rgb(0,0,255);
+  /* position:absolute; */
+  text-align: center;
+}
+
+/* PS4 page */
+
+#homeBackground {
+  background-color:rgb(0,0,0);
+}
+
+#imageHeight {
+  height:950px;
+}
+
+#ps4Background {
+  background-color:rgb(0, 55, 185);
+}
+
+.ps4title{
+  text-align: center;
+  color:rgb(0,0,0)
+}
+
+.ps4Text {
+  text-align: center;
+  margin:0px 10px 10px 0px;
+  /* overflow-y:auto; */
+  height:65vh;
+  width:48vw;
+  float:left;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(0, 0, 0);
+  background-color:rgb(255, 255, 255);
+  color:rgb(0,0,0);
+}
+
+.ps4Text1 {
+  text-align: center;
+  margin:0px 10px 10px 0px;
+  overflow-y:auto;
+  height:65vh;
+  width:48vw;
+  float:right;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(0, 0, 0);
+  background-color:rgb(255, 255, 255);
+  color:rgb(0,0,0);
+}
+
+.ps4Text2 {
+  text-align: center;
+  margin:0px 10px 10px 0px;
+  overflow-y:auto;
+  height:65vh;
+  width:48vw;
+  float:left;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(0, 0, 0);
+  background-color:rgb(255, 255, 255);
+  color:rgb(0,0,0);
+}
+
+.ps4Text3 {
+  text-align: center;
+  margin:0px 10px 10px 0px;
+  overflow-y:auto;
+  height:65vh;
+  width:48vw;
+  float:right;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(0, 0, 0);
+  background-color:rgb(255, 255, 255);
+  color:rgb(0,0,0);
+}
+
+.ps4Text4 {
+  display:inline-block;
+  margin:0px 10px 10px 0px;
+  overflow-y:auto;
+  height:65vh;
+  width:48vw;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(0, 0, 0);
+  background-color:rgb(255, 255, 255);
+  color:rgb(0,0,0);
+}
+
+#centerps4 {
+  text-align: center;
+}
+
+#xboxBackground {
+  background-color:rgb(93, 194, 30);
+}
+
+.Xboxtitle {
+  text-align: center;
+  color:rgb(0,0,0)
+}
+
+.xboxText {
+  margin:0px 10px 10px 0px;
+  overflow-y:auto;
+  height:65vh;
+  width:48vw;
+  float:left;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(107, 107, 107);
+  background-color:rgb(16, 124, 16);
+  color:rgb(255, 255, 255);
+}
+
+.xboxText1 {
+  margin:0px 10px 10px 0px;
+  overflow-y:auto;
+  height:65vh;
+  width:48vw;
+  float:right;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(107, 107, 107);
+  background-color:rgb(16, 124, 16);
+  color:rgb(255, 255, 255);
+}
+
+.xboxText2 {
+  margin:0px 10px 10px 0px;
+  overflow-y:auto;
+  height:65vh;
+  width:48vw;
+  float:left;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(107, 107, 107);
+  background-color:rgb(16, 124, 16);
+  color:rgb(255, 255, 255);
+}
+
+.xboxText3 {
+  margin:0px 10px 10px 0px;
+  overflow-y:auto;
+  height:65vh;
+  width:48vw;
+  float:right;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(107, 107, 107);
+  background-color:rgb(16, 124, 16);
+  color:rgb(255, 255, 255);
+}
+
+.xboxText4 {
+  display:inline-block;
+  margin:0px 10px 10px 0px;
+  overflow-y:auto;
+  height:65vh;
+  width:48vw;
+  padding:10px 10px 10px 10px;
+  border:10px ridge rgb(107, 107, 107);
+  background-color:rgb(16, 124, 16);
+  color:rgb(255, 255, 255);
+}
+
+#centerXboxOne {
+  text-align: center;
+}
+
+#image {
+  margin-left: 20px;
+  margin-bottom: 50px;
+  float:left;
+}
+
+#image1 {
+  margin-left: 10px;
+  margin-bottom: 50px;
+  float:right;
+}
+
+#image2 {
+  margin-left: 10px;
+  margin-bottom: 50px;
+  float:left;
+}
+
+#image3 {
+  margin-left: 10px;
+  margin-bottom: 50px;
+  float:right;
+}
+
+#image4 {
+  margin-left: 10px;
+  margin-bottom: 50px;
+  float:left;
+}
+
+#image5 {
+  margin-left: 20px;
+  margin-bottom: 50px;
+  float:right;
+}
+
+  /* #tw3nty{
+    width: 200px;
+    height: 300px;
+} */
