@@ -1,42 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!-- imports bootstrap -->
+  <link rel="stylesheet" type="text/css" href="../styles/styles.css"> <!-- imports styles.css stylesheet -->
   <title>Playstation Games</title>
   <link rel="icon" href="http://images.medicaldaily.com/sites/medicaldaily.com/files/styles/headline/public/2015/11/19/video-games.jpg" type="image" sizes="16x16">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!-- imports bootstrap -->
   <link rel="stylesheet" type="text/css" href="../styles/styles.css"> <!-- imports styles.css stylesheet -->
 </head>
-  <body>
+<body id="ps4Background">
 
-  <div class="pos-f-t">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <!-- Navbar content -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="/video_games"><span class="sr-only">(current)</span>Back to Selection</a>
-      </li>
+  <nav class="navbar navbar-light" style="background-color: #4C5760;">
+    <ul class="nav nav-tabs">
       <li class="nav-item">
-        <a class="nav-link" href="/about">About</a>
+        <a class="nav-link"  style= "color: #7497b5" href="/">Home</a>
       </li>
+
       <li class="nav-item">
-        <a class="nav-link" href="">Contact</a>
+        <a class="nav-link" style="color: #7497b5;" href="/about">About</a>
       </li>
+
+      <li class="nav-item">
+        <a class="nav-link" style="color: #7497b5;" href="#">Contact</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle active" data-toggle="dropdown" style="background-color: #4b2e63; color: #7497b5;" href="/consoles" role="button" aria-haspopup="true" aria-expanded="false">Console</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" style="color: #7497b5;" href="/consoles">Console Page</a>
+          <a class="dropdown-item" style="color: #7497b5;" href="/video_games">Video Game Catalogue</a>
+          <a class="dropdown-item" style="color: #7497b5;" href="/xbox_one">Xbox One</a>
+          <a class="dropdown-item" style="color: #7497b5;" href="/PS4">PlayStation 4</a>
+          <a class="dropdown-item" style="color: #7497b5;" href="/3ds">Nintendo 3Ds</a>
+          <a class="dropdown-item" style="color: #7497b5;" href="/flashGamesHomepage">Flash Games</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: #7497b5;" href="/consoles" role="button" aria-haspopup="true" aria-expanded="false">Games</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" style="color: #7497b5;" href="/xbox_one">Xbox One Games:</a>
+            <a class="dropdown-item" style="color: #7497b5;" href="/spongebob_squarepants">Spongebob Squarepants</a>
+            <a class="dropdown-item" style="color: #7497b5;" href="/doom_eternal">Doom Eternal</a>
+            <a class="dropdown-item" style="color: #7497b5;" href="/borderlands3">Borderlands 3</a>
+            <a class="dropdown-item" style="color: #7497b5;" href="/star_wars_jedi">Star Wars JEDI Fallen Order</a>
+            <a class="dropdown-item" style="color: #7497b5;" href="/beyond_good_and_evil_2">Beyond Good and Evil 2</a>
+            <a class="dropdown-item" style="color: #7497b5;" href="/gears5">Gears 5</a>
+        <div class="dropdown-divider"></div>
+          <a class="dropdown-item" style="color: #7497b5;" href="/PS4">PlayStation Games:</a>
+            <a class="dropdown-item" style="color: #7497b5;" href="/watch_dogs_legion">Watch Dogs LEGION</a>
+            <a class="dropdown-item" style="color: #7497b5;" href="/marvel_avengers">Avengers</a>
+            <a class="dropdown-item" style="color: #7497b5;" href="/cyberpunk2077">Cyberpunk 2077</a>
+            <a class="dropdown-item" style="color: #7497b5;" href="/the_last_of_us_2">The Last of Us Part II</a>
+            <a class="dropdown-item" style="color: #7497b5;" href="/medievil">MediEvil</a>
+            <a class="dropdown-item" style="color: #7497b5;" href="/predator">Predator</a>
+        <div class="dropdown-divider"></div>
+              <a class="dropdown-item" style="color: #7497b5;" href="/nintendo">Nintendo Games</a>
+        <div class="dropdown-divider"></div>
+          <a class="dropdown-item" style="color: #7497b5;" href="/flashGamesHomepage">Flash Games:</a>
+            <a class="dropdown-item" style="color: #7497b5;" href="/happyWheels">Happy Wheels</a>
+            <a class="dropdown-item" style="color: #7497b5;" href="/raftWars">Raft Wars 1</a>
+            <a class="dropdown-item" style="color: #7497b5;" href="/raftWars2">Raft Wars 2</a>
+            <a class="dropdown-item" style="color: #7497b5;" href="/run1">Run 1</a>
+            <a class="dropdown-item" style="color: #7497b5;" href="/run2">Run 2</a>
+            <a class="dropdown-item" style="color: #7497b5;" href="/run3">Run 3</a>
+            <a class="dropdown-item" style="color: #7497b5;" href="/whg">World's Hardest Game</a>
+            <a class="dropdown-item" style="color: #7497b5;" href="/whg2">World's Hardest Game 2</a>
+            <a class="dropdown-item" style="color: #7497b5;" href="/whg3">World's Hardest Game 3</a>
+          </div>
+        </li>
       </ul>
     </nav>
+
+  <h1 class="ps4title">Pick a PS4 game to read on their latest news</h1>
+
+  <div id="image">
+  <a href="http://localhost:8080/watch_dogs_legion"><img src="https://images-na.ssl-images-amazon.com/images/I/8137VnBVlqL._AC_SL1500_.jpg" width=600></a>
   </div>
 
-  <h1>Welcome to the Playstation games</h1>
-  <h2>Pick a game to read the latest info on it.</h2>
-  <a href="http://localhost:8080/watch_dogs_legion"><img src="https://www.gamestop.com/common/images/lbox/198041brp.jpg"></a>
-  <a href="http://localhost:8080/marvel_avengers"><img src="https://www.gamestop.com/common/images/lbox/202265brp.jpg"></a>
-  <a href="http://localhost:8080/cyberpunk2077"><img src="https://www.gamestop.com/common/images/lbox/202330brp.jpg"></a>
-  <a href="http://localhost:8080/the_last_of_us_2"><img src="https://wholesgame.com/wp-content/uploads/The-Last-of-Us-Part-2-Reveal-PS4.jpg"></a>
-  <a href="http://localhost:8080/medievil"><img src="https://www.gamestop.com/common/images/lbox/197878brp.jpg"></a>
-  <a href="http://localhost:8080/predator"><img src="http://images.pushsquare.com/games/ps4/predator_hunting_grounds/cover_large.jpg"></a>
+  <div id="image1">
+  <a href="http://localhost:8080/marvel_avengers"><img src="https://live.staticflickr.com/65535/48040927306_581b7bd533_b.jpg" width=600></a>
+  </div>
+
+  <div id="image2">
+  <a href="http://localhost:8080/cyberpunk2077"><img src="https://cms.gameflycdn.com/proxy/gf/boxart/480w/5018093.jpg" width=600></a>
+  </div>
+
+  <div id="image3">
+  <a href="http://localhost:8080/the_last_of_us_2"><img src="https://wholesgame.com/wp-content/uploads/The-Last-of-Us-Part-2-Reveal-PS4.jpg" width=600></a>
+  </div>
+
+  <div id="image4">
+  <a href="http://localhost:8080/medievil"><img src="https://static-ca.ebgames.ca/images/products/739706/3max.jpg" width=600></a>
+  </div>
+
+  <div id="image5">
+  <a href="http://localhost:8080/predator"><img src="http://images.pushsquare.com/games/ps4/predator_hunting_grounds/cover_large.jpg" width=600></a>
+  </div>
 
     <!-- ('/watch_dogs_legion', WatchDogsLegionHandler), #ps4 game
      ('/marvel_avengers', MarvelAvengersHandler), #ps4 game
@@ -44,8 +104,6 @@
      ('/the_last_of_us_2', LastofUsPartTwoHandler), #ps4 game
      ('/medievil', MediEvilHandler), #ps4 game
      ('/predator', PredatorHandler), #ps4 game -->
-
-     <!-- imports all script files including project's script.js file, jQuery, and bootstrap script files -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
