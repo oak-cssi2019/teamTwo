@@ -279,7 +279,6 @@ app = webapp2.WSGIApplication([
   ('/reviews', ReviewHandler),
   ('/review_list', ReviewListHandler),
   ('/flashGamesHomepage', FlashHomeHandler),
-  ('/results', ResultsHandler),
   ('/consoles', ConsoleHandler),
 
   # ('/nintendo', ResultsHandler),

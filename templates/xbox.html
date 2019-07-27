@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!-- imports bootstrap -->
   <link rel="stylesheet" type="text/css" href="../styles/styles.css"> <!-- imports styles.css stylesheet -->
 </head>
-<body>
+<body id="xboxBackground">
 
   <nav class="navbar navbar-light" style="background-color: #4C5760;">
     <ul class="nav nav-tabs">
@@ -70,14 +70,31 @@
       </ul>
     </nav>
 
-  <h1>Welcome to the Xbox One games</h1>
-  <h2>Pick a game to read the latest info on it.</h2>
-  <a href="http://localhost:8080/spongebob_squarepants"><img src="https://www.gamestop.com/common/images/lbox/202702brp.jpg"></a>
-  <a href="http://localhost:8080/doom_eternal"><img src="https://www.gamestop.com/common/images/lbox/171395brp1.jpg"></a>
-  <a href="http://localhost:8080/borderlands3"><img src="https://www.gamestop.com/common/images/lbox/194734b.jpg"></a>
-  <a href="http://localhost:8080/star_wars_jedi"><img src="https://www.gamestop.com/common/images/lbox/195453brp1.jpg"></a>
-  <a href="http://localhost:8080/beyond_good_and_evil_2"><img src="https://s2.gaming-cdn.com/images/products/3577/271x377/beyond-good-and-evil-2-xbox-one-cover.jpg"></a>
-  <a href="http://localhost:8080/gears5"><img src="https://www.gamestop.com/common/images/lbox/198520b.jpg"></a>
+  <h1 class="title">Pick a PS4 game to read on their latest news</h1>
+
+  <div id="imageLeft">
+  <a href="http://localhost:8080/spongebob_squarepants"><img src="https://images-na.ssl-images-amazon.com/images/I/81v2qcTZZZL._AC_SL1500_.jpg" width=600 height=800></a>
+  </div>
+
+  <div id="imageRight">
+  <a href="http://localhost:8080/doom_eternal"><img src="https://images-na.ssl-images-amazon.com/images/I/81wsBBUpE1L._AC_SL1500_.jpg" width=600 height=800></a>
+  </div>
+
+  <div id="imageLeft">
+  <a href="http://localhost:8080/borderlands3"><img src="https://cdn11.bigcommerce.com/s-ua4dd/images/stencil/1280x1280/products/36191/75583/1f698dad-9604-4d22-ae2e-cd7ef29e4f8a_2.65f6afe1651a09add84af3c326cf2e61__96684.1556059036.jpg?c=2&imbypass=on" width=600 height=800></a>
+  </div>
+
+  <div id="imageRight">
+  <a href="http://localhost:8080/star_wars_jedi"><img src="https://images-na.ssl-images-amazon.com/images/I/51B3Pz3M7sL._AC_SL1000_.jpg" width=600 height=800></a>
+  </div>
+
+  <div id="imageLeft">
+  <a href="http://localhost:8080/beyond_good_and_evil_2"><img src="https://s2.gaming-cdn.com/images/products/3577/orig/beyond-good-and-evil-2-xbox-one-cover.jpg" width=600 height=800></a>
+  </div>
+
+  <div id="imageRight">
+  <a href="http://localhost:8080/gears5"><img src="https://i.pinimg.com/originals/f0/e7/2e/f0e72e4f97dbdeae7f34b0b718fd377e.png" width=600 height=800></a>
+  </div>
 
   <!-- ('/spongebob_squarepants', SpongebobHandler), #xbox one game
    ('/doom_eternal', DoomEternalHandler), #xbox one game
