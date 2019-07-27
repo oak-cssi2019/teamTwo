@@ -2,6 +2,7 @@
 import webapp2
 import jinja2
 import os
+from reviews_model import Review
 # from review_model import Reviews
 # this initializes the jinja2 environment
 the_jinja_env = jinja2.Environment(
@@ -54,12 +55,35 @@ class SwitchHandler(webapp2.RequestHandler):
 class ReviewHandler(webapp2.RequestHandler):
     def get(self):
         # below are the form results from the form on home.html
-        results_Dict = {
-          'name': self.request.get('user-first-name'), #stores form input named 'user-first-name' under key 'name' which is the same name as the placeholder on 'results.html'
-          'feeling': self.request.get('user-feeling') #stores form input under 'user-feeling' under key 'feeling' which is the same name as the placeholder on 'results.html'
-        }
-        results_template = the_jinja_env.get_template('templates/review.html')
-        self.response.write(results_template.render(results_Dict)) #passes in results_Dict that will fill the placeholders on results.html
+
+
+        review_template = the_jinja_env.get_template('templates/review.html')
+        self.response.write(review_template.render()) #passes in results_Dict that will fill the placeholders on results.html
+
+    def post(self):
+        print("post works")
+
+        switch_game = self.request.get('switch_games')
+        switch_text = self.request.get('switch_text')
+        switch_rating =self.request.get('switch_rating')
+
+        newReview = Review(game_name=switch_game, review=switch_text, rating=switch_rating)
+
+        newReview.put()
+
+class ReviewListHandler(webapp2.RequestHandler):
+    def get(self):
+        # below are the form results from the form on home.html
+       reviews = Review.query().fetch()
+
+       reviewlist_dict ={"reviews": reviews }
+       reviewList_template = the_jinja_env.get_template('templates/review_list.html')
+       self.response.write(reviewList_template.render(reviewlist_dict)) #passes in results_Dict that will fill the placeholders on results.html
+
+
+
+
+
 
 class ThreeDSHandler(webapp2.RequestHandler):
     def get(self):
@@ -253,6 +277,7 @@ app = webapp2.WSGIApplication([
   ('/3ds', ThreeDSHandler),
   ('/switch', SwitchHandler),
   ('/reviews', ReviewHandler),
+  ('/review_list', ReviewListHandler),
   ('/flashGamesHomepage', FlashHomeHandler),
   ('/consoles', ConsoleHandler),
 
